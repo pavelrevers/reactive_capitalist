@@ -12,7 +12,7 @@ var Game = React.createClass({
         });
         return (
             <div className="game">
-                <div className="game__cash">{this.props.state.get('cash')/100}</div>
+                <div className="game__cash">{this.props.state.get('bank').get('cash')/100}</div>
                 {businesses}
             </div>
         )
